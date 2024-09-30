@@ -76,10 +76,10 @@ const DarkMoodfun =()=>{
       <h1 className='text-2xl font-bold text-[green] mb-4'>Second Number: <span className={`${darkMood ? ' text-white' : 'bg-gray-100 text-gray-800'}`}>{num2}</span></h1>
 
       <div className="flex flex-wrap justify-center mb-4 md:gap-0 gap-4 md:space-y-0 md:space-x-4">
-      <button className="bg-green-500 text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickAdd}>Add</button>
-      <button className="bg-green-500 text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickSub}>Subtract</button>
-      <button className="bg-green-500 text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickMul}>Multiply</button>
-      <button className="bg-green-500 text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickMod}>Modulus</button>
+      <button className="bg-[green] text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickAdd}>Add</button>
+      <button className="bg-[green] text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickSub}>Subtract</button>
+      <button className="bg-[green] text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickMul}>Multiply</button>
+      <button className="bg-[green] text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickMod}>Modulus</button>
     </div>
 
       <h2 className='text-lg md:text-2xl font-bold text-[green] mb-2'>Addition Result: <span className={`${darkMood ? ' text-white' : 'bg-gray-100 text-gray-800'}`}>{add}</span></h2>
@@ -87,14 +87,19 @@ const DarkMoodfun =()=>{
       <h2 className='text-lg md:text-2xl font-bold text-[green] mb-2'>Multiplication Result: <span className={`${darkMood ? ' text-white' : 'bg-gray-100 text-gray-800'}`}>{multiply}</span></h2>
       <h2 className='text-lg md:text-2xl font-bold text-[green] mb-2'>Modulus Result: <span className={`${darkMood ? ' text-white' : 'bg-gray-100 text-gray-800'}`}>{modulus}</span></h2>
 
-      <div className="mt-4">
-          <img 
-            src={images[ImageIndex]} 
-            alt={'image'} 
-            className="w-64 h-64 object-cover cursor-pointer"
-            onClick={handleImageClick}
-          />
-        </div>
+      <div className="mt-4 flex flex-col items-center">
+  <img 
+    src={images[ImageIndex]} 
+    alt={`Image`} 
+    className="w-full h-auto max-w-xs object-cover "
+  />
+  <button 
+    className="mt-4 bg-[green] text-white text-md md:text-xl w-36 py-2 rounded-lg hover:bg-green-600 transition duration-300"
+    onClick={handleImageClick}
+  >
+    Change Image
+  </button>
+</div>
     </div>
     </>
   );
