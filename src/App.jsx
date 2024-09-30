@@ -54,8 +54,8 @@ const DarkMoodfun =()=>{
   return (
     <>
    
-    <div className={`flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-md  mx-auto  ${darkMood ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-800'}`}>
-    <button
+   <div className={`flex flex-col items-center justify-center min-h-screen ${darkMood ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-800'}`}>
+   <button
     className={`mt-4 px-4 py-2 mb-10 rounded-lg transition duration-300 ${darkMood ? 'bg-[red] text-black' : 'bg-gray-800 text-white'}`}
     onClick={DarkMoodfun}
   >
@@ -76,10 +76,10 @@ const DarkMoodfun =()=>{
       <h1 className='text-2xl font-bold text-[green] mb-4'>Second Number: <span className={`${darkMood ? ' text-white' : 'bg-gray-100 text-gray-800'}`}>{num2}</span></h1>
 
       <div className="flex flex-wrap justify-center mb-4 md:gap-0 gap-4 md:space-y-0 md:space-x-4">
-      <button className="bg-green-500 text-white text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickAdd}>Add</button>
-      <button className="bg-green-500 text-white text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickSub}>Subtract</button>
-      <button className="bg-green-500 text-white text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickMul}>Multiply</button>
-      <button className="bg-green-500 text-white text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickMod}>Modulus</button>
+      <button className="bg-green-500 text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickAdd}>Add</button>
+      <button className="bg-green-500 text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickSub}>Subtract</button>
+      <button className="bg-green-500 text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickMul}>Multiply</button>
+      <button className="bg-green-500 text-white md:text-2xl w-32 py-2 rounded-lg hover:bg-green-600 transition duration-300" onClick={ClickMod}>Modulus</button>
     </div>
 
       <h2 className='text-lg md:text-2xl font-bold text-[green] mb-2'>Addition Result: <span className={`${darkMood ? ' text-white' : 'bg-gray-100 text-gray-800'}`}>{add}</span></h2>
