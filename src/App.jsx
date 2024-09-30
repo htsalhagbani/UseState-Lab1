@@ -30,6 +30,7 @@ function App() {
     }
     setImageIndex(nextIndex);
   };
+
 const DarkMoodfun =()=>{
   setDarkMood(!darkMood);
 }
@@ -53,9 +54,9 @@ const DarkMoodfun =()=>{
   return (
     <>
    
-    <div className={`flex flex-col items-center bg-gray-100 md:h-[100vh] p-6 rounded-lg shadow-md  mx-auto  ${darkMood ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-800'}`}>
+    <div className={`flex flex-col items-center bg-gray-100 md:h-screen p-6 rounded-lg shadow-md  mx-auto  ${darkMood ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-800'}`}>
     <button
-    className={`mt-4 px-4 py-2 mb-10 rounded-lg transition duration-300 ${darkMood ? 'bg-yellow-500 text-black' : 'bg-gray-800 text-white'}`}
+    className={`mt-4 px-4 py-2 mb-10 rounded-lg transition duration-300 ${darkMood ? 'bg-[red] text-black' : 'bg-gray-800 text-white'}`}
     onClick={DarkMoodfun}
   >
     {darkMood ? 'Switch to Light ' : 'Switch to Dark '}
